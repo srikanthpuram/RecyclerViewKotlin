@@ -11,7 +11,6 @@
 
         <ImageView
             android:id="@+id/profile_image"
-            android:src="@mipmap/perm_group_personal_info"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_alignParentTop="true"/>

@@ -1,11 +1,14 @@
 package com.srikanthpuram.samples.recyclerviewkotlin
 
+import android.net.Uri
+import java.net.URI
+
 /**
  * Created by spuram on 4/9/2018.
  */
-data class EmployeeData (val name: String, val designation: String, val image: Int)
+data class EmployeeData (val name: String, val designation: String, val imageUri: Uri)
 
-    fun getEmployeesData(): List<EmployeeData> {
+    /*fun getEmployeesData(): List<EmployeeData> {
         return listOf(
                 EmployeeData("Srikanth Puram","Mobile Developer",R.drawable.perm_group_personal_info),
                 EmployeeData("Satish Avunoori","Mobile Developer",R.drawable.walk),
@@ -18,5 +21,5 @@ data class EmployeeData (val name: String, val designation: String, val image: I
                 EmployeeData("Chelsea Cerel","Product Owner",R.drawable.water)
 
         )
-    }
+    }*/
 

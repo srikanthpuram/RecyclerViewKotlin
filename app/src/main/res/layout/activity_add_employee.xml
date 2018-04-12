@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.srikanthpuram.samples.recyclerviewkotlin.AddEmployeeActivity">
+    <EditText
+        android:id="@+id/add_employee_name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/employee_name"/>
+    <EditText
+        android:id="@+id/add_employee_designation_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_employee_name_edit"
+        android:hint="@string/employee_designation"/>
+    <Button
+        android:id="@+id/select_employee_picture_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_employee_designation_edit"
+        android:onClick="chooseImage"
+        android:text="@string/select_profile_picture"/>
+    
+    <ImageView
+        android:id="@+id/profile_picture_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_employee_picture_button"
+        android:padding="10dp"
+        android:foregroundGravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/profile_save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_picture_iv"
+        android:onClick="saveEmployee"
+        android:text="@string/save"/>
+
+    <TextView
+        android:id="@+id/error_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/profile_save_button"/>
+</RelativeLayout>
